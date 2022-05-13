@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Guess The Number</title>
+        <script src="script.js"></script>
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/animation/animate.min.css" />
+    </head>
+    <body onload="int()">
+        <main>
+
+            <div id="welcome--screen">
+                <img src="assets/img.jpg">
+                <section class="eventSection">
+                    <h2>Guess Number Between<br> 0 and 1000</h2>
+                    <h3 class="animate__animated animate__bounce
+                        animate__infinite infinite animate__slower 8s">select
+                        deficulty </h3>
+                    <div class="btn--wraper">
+                        <button onclick="openEasyMode()">Easy Mode</button>
+                        <button onclick="openHardMode()"> Hard Mode</button>
+                    </div>
+                </section>
+            </div>
+
+            <div id="newGamme">
+                <div class="btn--wraper">
+                    <h2 id="new">You won or lose the game </h2>
+                    <button onclick="location.reload()">New Game</button>
+                    <h3 class="animate__animated animate__bounce
+                    animate__infinite infinite animate__slower 8s">tap to play again</h3>
+                    <h4>your Atempts &#128071;</h4>
+                    <h5 id="Guesses-report"></h5>
+                </div>
+            </div>
+            
+                <section id="startGame">
+                    <h3 id="textOutput" class="animate__animated animate__bounce
+                    animate__infinite infinite animate__slower 8s">Your Guess</h3>
+                    <input type="number" id="inputBox" min="1" max="1000"
+                        placeholder="Enter Guess ">
+                    <div class="stats">
+                        <div class="info">
+                            <p> Attempts Left Back:</p>
+                            <span id="attemps">0</span>
+                        </div>
+                        <div class="info">
+                            <p> Attempts:</p>
+                            <span id="Guesses"> 0</span>
+                        </div>
+                    </div>
+                    <section id="keyboard">
+                        <p>
+                            <input type="button"  value="1" id="one" onclick="typeOne()">
+                            <input type="button"  value="2" id="two" onclick="typeTwo()">
+                            <input type="button"  value="3" id="three" onclick="typeThree()">
+                            <input type="button"  value="4" id="four" onclick="typeFour()">
+                        </p>
+                        <p>
+                            <input type="button"  value="5" id="five" onclick="typeFive()">
+                            <input type="button"  value="6" id="six" onclick="typeSix()">
+                            <input type="button"  value="7" id="seven" onclick="typeSeven()">
+                            <input type="button"  value="8" id="eight" onclick="typeEight()">
+                        </p>
+                        <p>
+                            <input type="button"  value="9" id="nine" onclick="typeNine()">
+                            <input type="button"  value="0" id="zero" onclick="typeZero()">
+                            <input type="button"  value="Del"cid="del" onclick="del()">
+                            <input type="button"  value="Ok" id="ok" onclick="enter()">
+                        </p>
+    
+                    </section>
+                </section>
+              
+        </main>
+
+    </body>
+</html>

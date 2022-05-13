@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #503635;
+  --background: #fbfbfb;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-image: linear-gradient(to right, indigo, violet);
+}
+
+main {
+  width: 30vw;
+  text-align: center;
+  background-color: var(--background);
+  border: solid var(--dark);
+  border-width: 0.8rem;
+  border-radius: 1rem;
+  padding: 8rem 5rem;
+  color: #1f2933;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+img {
+  width: 90%;
+  max-height: 22rem;
+  height: auto;
+  margin: 2rem 0 4rem 0;
+}
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  min-width: 28rem;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 2.5rem 6rem;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  text-transform: capitalize;
+  background-color: rgb(73, 12, 92);
+}
+
+button:hover {
+  box-shadow: rgb(97, 10, 97) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+
+button:last-child {
+  background-color: rgb(236, 112, 112);
+}
+#board {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newGameBtn button {
+  margin: 2rem 0;
+}
+
+input {
+  border: 0.3rem solid lightgray;
+  background: transparent;
+  margin: 1rem 0rem;
+  padding: 2rem 0;
+  width: 25rem;
+  text-align: center;
+  font-family: "josfin sans";
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.stats {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.info span {
+  font-size: 2rem;
+  color: green;
+}
+
+.btn--wraper{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-bottom: 4rem;
+margin-bottom: 4rem;
+}
+
+#newGamme{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+h2 {
+  font-family: myFirstFont;
+  color: rgb(38, 129, 38);
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+h3 {
+  font-family: kranky;
+  color: rgb(158, 40, 46);
+  font-size: 30px;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+h4{
+  font-size: 25px;
+  margin-bottom: 2rem;
+}
+#Guesses-report{
+  font-size: 20px;
+  color: rgb(124, 55, 10);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(assets/fonts/Frijole-Regular.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: kranky;
+  src: url(assets/fonts/MeriendaOne-Regular.ttf);
+  font-weight: bold;
+}
+
+p input{
+  display: flex;
+  display: inline;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+  height: 10px;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 3.5rem 5rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0px;
+  transition: all 0.5s;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgb(73, 12, 92)
+}
+p input:hover {
+  box-shadow: rgb(97, 10, 97) 0 1px 30px;
+  transition-duration: 0.1s;
+}
+sup{
+  width: auto;
+  height: auto;
+  background-color: #c7bde7;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+}
+
+/* ========================= Media Queries =============================*/
+
+
+/*==================== For Tablests And Small Laptops =======================*/
+
+
+/*==================== For Phones And Smaller Tablets =======================*/
+
