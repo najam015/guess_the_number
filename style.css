@@ -13,6 +13,11 @@ html {
   font-size: 62.5%;
 }
 
+d {
+  margin-top: 8%;
+  margin-left: -13%;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -111,6 +116,9 @@ input {
 }
 
 .info span {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
   font-size: 2rem;
   color: green;
 }
@@ -195,10 +203,12 @@ sup{
   width: auto;
   height: auto;
   background-color: #c7bde7;
-  border-radius: 50%;
+  border-radius: 10px;
   font-size: 1.3rem;
   font-weight: bold;
   color: rgb(0, 0, 0);
+  padding: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* ========================= Media Queries =============================*/

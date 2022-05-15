@@ -28,7 +28,7 @@ function compareNum () {
   userNum = Number(document.getElementById('inputBox').value)
   var a = ordinalNumber();
   var b = hiLow();
-  userGuess = [...userGuess, userNum+"<sup>"+a+"</sup>"+"<sub>"+b+"</sub>"]
+  userGuess = [...userGuess, userNum+"<sup>"+a+"</sup>"+"<d>"+b+"</d>"]
   document.getElementById('Guesses').innerHTML = userGuess
 
   if (userNum < randomNum) {
@@ -161,7 +161,7 @@ function ordinalNumber(){
     else if(attemptLeft===3){return "3rd"}
     else if(attemptLeft==4){return "4th"}
     else{return attemptLeft +'th'}
-    
+
 }
 function hiLow(){
   if(userNum > randomNum) {return "hi"}
